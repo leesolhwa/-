@@ -1,0 +1,85 @@
+@charset "UTF-8";
+a{
+  color: inherit; /*부모영역 기준 적용*/
+}
+li:after, #contents::after{ /*float사용했을시 레이아웃 망가지지않게 적용해야함*/
+  display: block;
+  content: "";
+  clear: both;
+}
+
+header{
+  background: #B7C4CF;
+  color: #fff;
+}
+  .header_in{ 
+    width: 1200px; height: 100px;
+    margin: auto;
+  }
+  h1{
+    float: left;
+    line-height: 100px;
+  }
+  nav{
+    position: absolute;
+    left: 50%; margin-left: -250px;
+    /*transform: translate(-50%); 트랜스폼속성때문에 크기가 작아지면 줄바꿈이된다*/
+  }
+  nav ul{
+
+  }
+  nav li{
+    float: left; /*nav메뉴는 float를 자주사용*/
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  nav a{
+    display: block;
+    margin: 0 15px;
+    font-size: 18px;
+    line-height: 100px;
+  }
+  nav button{
+    display: none;
+  }
+  .allBtn{
+    display: none;
+  }
+  .sign{
+    float: right;
+    line-height: 100px;
+  }
+
+#visual{
+  height: 500px;
+  background: rgb(240, 240, 240);
+}
+
+#contents{
+  width: 1200px;
+  margin: auto;
+}
+  section{
+    float: left;
+    width: 25%; height: 300px;
+  }
+    .con1{
+      background: #B7C4CF
+    }
+    .con2{
+      background: #EEE3CB
+    }
+    .con3{
+      background: #D7C0AE
+    }
+    .con4{
+      background: #967E76
+    }
+
+footer{
+  background: #9db4c8
+}
+  .footer_in{
+    width: 1200px; height: 50px;
+    margin: auto;
+  }
